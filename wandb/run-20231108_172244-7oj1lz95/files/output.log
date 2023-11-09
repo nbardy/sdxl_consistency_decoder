@@ -1,0 +1,174 @@
+Mapping
+Mapping item 0
+Mapping item 1
+Skipping item 1 due to small size
+Mapping item 2
+Skipping item 2 due to small size
+Mapping item 3
+Skipping item 3 due to small size
+Mapping item 4
+Skipping item 4 due to small size
+Mapping item 5
+Skipping item 5 due to small size
+Mapping item 6
+Skipping item 6 due to small size
+Mapping item 7
+Skipping item 7 due to small size
+Mapping item 8
+Skipping item 8 due to small size
+Mapping item 9
+Skipping item 9 due to small size
+Mapping item 10
+Skipping item 10 due to small size
+Mapping item 11
+Skipping item 11 due to small size
+Mapping item 12
+Skipping item 12 due to small size
+Mapping item 13
+Skipping item 13 due to small size
+Mapping item 14
+Skipping item 14 due to small size
+Mapping item 15
+Skipping item 15 due to small size
+Mapping item 16
+Skipping item 16 due to small size
+Mapping item 17
+Skipping item 17 due to small size
+Mapping item 18
+Skipping item 18 due to small size
+Mapping item 19
+Skipping item 19 due to small size
+Mapping item 20
+Skipping item 20 due to small size
+Mapping item 21
+Skipping item 21 due to small size
+Mapping item 22
+Skipping item 22 due to small size
+Mapping item 23
+Skipping item 23 due to small size
+Mapping item 24
+Mapping item 25
+Skipping item 25 due to small size
+Mapping item 26
+Skipping item 26 due to small size
+Mapping item 27
+Skipping item 27 due to small size
+Mapping item 28
+Skipping item 28 due to small size
+Mapping item 29
+Skipping item 29 due to small size
+Mapping item 30
+Mapping item 31
+Mapping item 32
+Mapping item 33
+Mapping item 34
+Skipping item 34 due to small size
+Mapping item 35
+Skipping item 35 due to small size
+Mapping item 36
+Skipping item 36 due to small size
+Mapping item 37
+Skipping item 37 due to small size
+Mapping item 38
+Skipping item 38 due to small size
+Mapping item 39
+Mapping item 40
+Skipping item 40 due to small size
+Mapping item 41
+Mapping item 42
+Mapping item 43
+Mapping item 44
+Mapping item 45
+Skipping item 45 due to small size
+Mapping item 46
+Skipping item 46 due to small size
+Mapping item 47
+Skipping item 47 due to small size
+Mapping item 48
+Skipping item 48 due to small size
+Mapping item 49
+Skipping item 49 due to small size
+Mapping item 50
+Skipping item 50 due to small size
+Mapping item 51
+Skipping item 51 due to small size
+Mapping item 52
+Skipping item 52 due to small size
+Mapping item 53
+Skipping item 53 due to small size
+Mapping item 54
+Mapping item 55
+Mapping item 56
+Mapping item 57
+Skipping item 57 due to small size
+Mapping item 58
+Skipping item 58 due to small size
+Mapping item 59
+Skipping item 59 due to small size
+Mapping item 60
+Mapping item 61
+Mapping item 62
+Mapping item 63
+Skipping item 63 due to small size
+Mapping item 64
+Mapping item 65
+Mapping item 66
+Mapping item 67
+Mapping item 68
+Mapping item 69
+Mapping item 70
+Mapping item 71
+Mapping item 72
+Mapping item 73
+Mapping item 74
+Mapping item 75
+Mapping item 76
+Mapping item 77
+Mapping item 78
+Skipping item 78 due to small size
+Mapping item 79
+Mapping item 80
+Skipping item 80 due to small size
+Mapping item 81
+Mapping item 82
+Mapping item 83
+Mapping item 84
+Mapping item 85
+Mapping item 86
+Mapping item 87
+Mapping item 88
+Skipping item 88 due to small size
+Mapping item 89
+Skipping item 89 due to small size
+Mapping item 90
+Skipping item 90 due to small size
+Mapping item 91
+Skipping item 91 due to small size
+Mapping item 92
+Mapping item 93
+Mapping item 94
+Mapping item 95
+Mapping item 96
+Mapping item 97
+Mapping item 98
+Mapping item 99
+Done mapping
+Setting up [LPIPS] perceptual loss: trunk [alex], v[0.1], spatial [off]
+Loading model from: /Users/nicholasbardy/.pyenv/versions/3.9.9/lib/python3.9/site-packages/lpips/weights/v0.1/alex.pth
+/Users/nicholasbardy/.pyenv/versions/3.9.9/lib/python3.9/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/Users/nicholasbardy/.pyenv/versions/3.9.9/lib/python3.9/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=AlexNet_Weights.IMAGENET1K_V1`. You can also use `weights=AlexNet_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Keyword arguments {'device': 'cuda:0'} are not expected by StableDiffusionPipeline and will be ignored.
+Loading pipeline components...:  29%|███████████████████████████▏                                                                   | 2/7 [00:00<00:00,  6.04it/s]
+Loading pipeline components...:  43%|████████████████████████████████████████▋                                                      | 3/7 [00:00<00:01,  3.28it/s]`text_config_dict` is provided which will be used to initialize `CLIPTextConfig`. The value `text_config["id2label"]` will be overriden.
+`text_config_dict` is provided which will be used to initialize `CLIPTextConfig`. The value `text_config["bos_token_id"]` will be overriden.
+`text_config_dict` is provided which will be used to initialize `CLIPTextConfig`. The value `text_config["eos_token_id"]` will be overriden.
+Loading pipeline components...: 100%|███████████████████████████████████████████████████████████████████████████████████████████████| 7/7 [00:01<00:00,  5.14it/s]
+Traceback (most recent call last):
+  File "/Users/nicholasbardy/git/sdxl_consistency/train.py", line 254, in <module>
+    train()
+  File "/Users/nicholasbardy/git/sdxl_consistency/train.py", line 215, in train
+    target = batch["pixel_values"].to(weight_dtype)
+KeyError: 'pixel_values'
+Consistency decoder loaded

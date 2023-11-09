@@ -1,0 +1,40 @@
+{
+    "os": "macOS-13.0.1-arm64-arm-64bit",
+    "python": "3.9.9",
+    "heartbeatAt": "2023-11-09T01:25:56.589109",
+    "startedAt": "2023-11-09T01:25:54.608554",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--dataset_name",
+        "lambdalabs/pokemon-blip-captions"
+    ],
+    "state": "running",
+    "program": "/Users/nicholasbardy/git/sdxl_consistency/train.py",
+    "codePathLocal": "train.py",
+    "codePath": "train.py",
+    "git": {
+        "remote": null,
+        "commit": "93191c58cd3449a7b296efbb86bb696fa350c57e"
+    },
+    "email": "nicholasbardy@gmail.com",
+    "root": "/Users/nicholasbardy/git/sdxl_consistency",
+    "host": "Nicholass-MacBook-Pro.local",
+    "username": "nicholasbardy",
+    "executable": "/Users/nicholasbardy/.pyenv/versions/3.9.9/bin/python",
+    "cpu_count": 10,
+    "cpu_count_logical": 10,
+    "disk": {
+        "/": {
+            "total": 1858.1917190551758,
+            "used": 12.082839965820312
+        }
+    },
+    "gpuapple": {
+        "type": "arm",
+        "vendor": "Apple"
+    },
+    "memory": {
+        "total": 64.0
+    }
+}

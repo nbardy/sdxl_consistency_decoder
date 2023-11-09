@@ -1,0 +1,61 @@
+Downloading data files: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 493.10it/s]
+Extracting data files: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 771.58it/s]
+Generating train split: 100%|██████████████████████████████████████████████████████████████████████████████████████████| 833/833 [00:00<00:00, 6024.74 examples/s]
+/Users/nicholasbardy/.pyenv/versions/3.9.9/lib/python3.9/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/Users/nicholasbardy/.pyenv/versions/3.9.9/lib/python3.9/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=AlexNet_Weights.IMAGENET1K_V1`. You can also use `weights=AlexNet_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Downloading (…)ain/model_index.json: 100%|████████████████████████████████████████████████████████████████████████████████████████| 541/541 [00:00<00:00, 428kB/s]
+Setting up [LPIPS] perceptual loss: trunk [alex], v[0.1], spatial [off]
+Loading model from: /Users/nicholasbardy/.pyenv/versions/3.9.9/lib/python3.9/site-packages/lpips/weights/v0.1/alex.pth
+Downloading (…)_checker/config.json: 100%|███████████████████████████████████████████████████████████████████████████████████| 4.72k/4.72k [00:00<00:00, 2.13MB/s]
+Downloading (…)rocessor_config.json: 100%|████████████████████████████████████████████████████████████████████████████████████████| 342/342 [00:00<00:00, 262kB/s]
+Downloading (…)cheduler_config.json: 100%|████████████████████████████████████████████████████████████████████████████████████████| 308/308 [00:00<00:00, 244kB/s]
+Downloading (…)5b9/unet/config.json: 100%|████████████████████████████████████████████████████████████████████████████████████████| 743/743 [00:00<00:00, 537kB/s]
+Downloading (…)b5b9/vae/config.json: 100%|████████████████████████████████████████████████████████████████████████████████████████| 547/547 [00:00<00:00, 371kB/s]
+Downloading model.safetensors:   0%|                                                                                                   | 0.00/492M [00:00<?, ?B/s]
+Downloading model.safetensors:   3%|███                                                                                      | 41.9M/1.22G [00:01<00:31, 37.5MB/s]
+Downloading model.safetensors:   6%|█████▊                                                                                    | 31.5M/492M [00:00<00:14, 31.6MB/s]
+Downloading (…)ch_model.safetensors:   0%|▎                                                                                  | 10.5M/3.44G [00:00<03:45, 15.2MB/s]
+
+
+
+
+
+
+
+
+
+
+Downloading (…)ch_model.safetensors: 100%|█████████████████████████████████████████████████████████████████████████████████████| 335M/335M [00:22<00:00, 17.9MB/s]
+
+
+
+Downloading (…)ch_model.safetensors:  20%|████████████████▉                                                                   | 692M/3.44G [00:30<02:21, 19.4MB/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Loading pipeline components...:   0%|                                                                                                       | 0/7 [00:00<?, ?it/s]`text_config_dict` is provided which will be used to initialize `CLIPTextConfig`. The value `text_config["id2label"]` will be overriden.
+`text_config_dict` is provided which will be used to initialize `CLIPTextConfig`. The value `text_config["bos_token_id"]` will be overriden.
+`text_config_dict` is provided which will be used to initialize `CLIPTextConfig`. The value `text_config["eos_token_id"]` will be overriden.
+
+Loading pipeline components...: 100%|███████████████████████████████████████████████████████████████████████████████████████████████| 7/7 [00:01<00:00,  3.59it/s]
+Loading consistency decoder
+Traceback (most recent call last):
+  File "/Users/nicholasbardy/git/sdxl_consistency/train.py", line 204, in <module>
+    train()
+  File "/Users/nicholasbardy/git/sdxl_consistency/train.py", line 150, in train
+    consitency_decoder = get_consistency_decoder().to(device, dtype=dtype)
+AttributeError: 'ConsistencyDecoder' object has no attribute 'to'
+Consistency decoder loaded

@@ -1,0 +1,198 @@
+2023-11-08 17:25:04,114 INFO    StreamThr :25399 [internal.py:wandb_internal():86] W&B internal server running at pid: 25399, started at: 2023-11-08 17:25:04.114440
+2023-11-08 17:25:04,115 DEBUG   HandlerThread:25399 [handler.py:handle_request():146] handle_request: status
+2023-11-08 17:25:04,120 INFO    WriterThread:25399 [datastore.py:open_for_write():85] open: /Users/nicholasbardy/git/sdxl_consistency/wandb/run-20231108_172504-q9nrl4tw/run-q9nrl4tw.wandb
+2023-11-08 17:25:04,121 DEBUG   SenderThread:25399 [sender.py:send():380] send: header
+2023-11-08 17:25:04,141 DEBUG   SenderThread:25399 [sender.py:send():380] send: run
+2023-11-08 17:25:04,443 INFO    SenderThread:25399 [dir_watcher.py:__init__():211] watching files in: /Users/nicholasbardy/git/sdxl_consistency/wandb/run-20231108_172504-q9nrl4tw/files
+2023-11-08 17:25:04,443 INFO    SenderThread:25399 [sender.py:_start_run_threads():1122] run started: q9nrl4tw with start time 1699493104.114128
+2023-11-08 17:25:04,453 DEBUG   HandlerThread:25399 [handler.py:handle_request():146] handle_request: check_version
+2023-11-08 17:25:04,454 DEBUG   SenderThread:25399 [sender.py:send_request():407] send_request: check_version
+2023-11-08 17:25:04,527 DEBUG   HandlerThread:25399 [handler.py:handle_request():146] handle_request: run_start
+2023-11-08 17:25:04,533 DEBUG   HandlerThread:25399 [system_info.py:__init__():32] System info init
+2023-11-08 17:25:04,533 DEBUG   HandlerThread:25399 [system_info.py:__init__():47] System info init done
+2023-11-08 17:25:04,533 INFO    HandlerThread:25399 [system_monitor.py:start():194] Starting system monitor
+2023-11-08 17:25:04,533 INFO    SystemMonitor:25399 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2023-11-08 17:25:04,534 INFO    HandlerThread:25399 [system_monitor.py:probe():214] Collecting system info
+2023-11-08 17:25:04,534 INFO    SystemMonitor:25399 [interfaces.py:start():190] Started cpu monitoring
+2023-11-08 17:25:04,534 INFO    SystemMonitor:25399 [interfaces.py:start():190] Started disk monitoring
+2023-11-08 17:25:04,534 DEBUG   HandlerThread:25399 [system_info.py:probe():196] Probing system
+2023-11-08 17:25:04,561 INFO    SystemMonitor:25399 [interfaces.py:start():190] Started gpuapple monitoring
+2023-11-08 17:25:04,564 INFO    SystemMonitor:25399 [interfaces.py:start():190] Started memory monitoring
+2023-11-08 17:25:04,564 INFO    SystemMonitor:25399 [interfaces.py:start():190] Started network monitoring
+2023-11-08 17:25:04,565 DEBUG   HandlerThread:25399 [system_info.py:_probe_git():181] Probing git
+2023-11-08 17:25:04,578 DEBUG   HandlerThread:25399 [system_info.py:_probe_git():189] Probing git done
+2023-11-08 17:25:04,578 DEBUG   HandlerThread:25399 [system_info.py:probe():244] Probing system done
+2023-11-08 17:25:04,578 DEBUG   HandlerThread:25399 [system_monitor.py:probe():223] {'os': 'macOS-13.0.1-arm64-arm-64bit', 'python': '3.9.9', 'heartbeatAt': '2023-11-09T01:25:04.563124', 'startedAt': '2023-11-09T01:25:04.105833', 'docker': None, 'cuda': None, 'args': ('--dataset_name', 'lambdalabs/pokemon-blip-captions'), 'state': 'running', 'program': '/Users/nicholasbardy/git/sdxl_consistency/train.py', 'codePathLocal': 'train.py', 'codePath': 'train.py', 'git': {'remote': None, 'commit': '93191c58cd3449a7b296efbb86bb696fa350c57e'}, 'email': 'nicholasbardy@gmail.com', 'root': '/Users/nicholasbardy/git/sdxl_consistency', 'host': 'Nicholass-MacBook-Pro.local', 'username': 'nicholasbardy', 'executable': '/Users/nicholasbardy/.pyenv/versions/3.9.9/bin/python', 'cpu_count': 10, 'cpu_count_logical': 10, 'disk': {'/': {'total': 1858.1917190551758, 'used': 12.082839965820312}}, 'gpuapple': {'type': 'arm', 'vendor': 'Apple'}, 'memory': {'total': 64.0}}
+2023-11-08 17:25:04,578 INFO    HandlerThread:25399 [system_monitor.py:probe():224] Finished collecting system info
+2023-11-08 17:25:04,578 INFO    HandlerThread:25399 [system_monitor.py:probe():227] Publishing system info
+2023-11-08 17:25:04,578 DEBUG   HandlerThread:25399 [system_info.py:_save_pip():52] Saving list of pip packages installed into the current environment
+2023-11-08 17:25:04,579 DEBUG   HandlerThread:25399 [system_info.py:_save_pip():68] Saving pip packages done
+2023-11-08 17:25:04,579 DEBUG   HandlerThread:25399 [system_info.py:_save_code():90] Saving code
+2023-11-08 17:25:04,584 DEBUG   HandlerThread:25399 [system_info.py:_save_code():111] Saving code done
+2023-11-08 17:25:04,584 DEBUG   HandlerThread:25399 [system_info.py:_save_patches():128] Saving git patches
+2023-11-08 17:25:04,661 DEBUG   HandlerThread:25399 [system_info.py:_save_patches():170] Saving git patches done
+2023-11-08 17:25:04,662 INFO    HandlerThread:25399 [system_monitor.py:probe():229] Finished publishing system info
+2023-11-08 17:25:04,669 DEBUG   SenderThread:25399 [sender.py:send():380] send: files
+2023-11-08 17:25:04,669 INFO    SenderThread:25399 [sender.py:_save_file():1378] saving file wandb-metadata.json with policy now
+2023-11-08 17:25:04,670 INFO    SenderThread:25399 [sender.py:_save_file():1378] saving file code/train.py with policy now
+2023-11-08 17:25:04,670 INFO    SenderThread:25399 [sender.py:_save_file():1378] saving file diff.patch with policy now
+2023-11-08 17:25:04,675 DEBUG   HandlerThread:25399 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-08 17:25:04,675 DEBUG   SenderThread:25399 [sender.py:send_request():407] send_request: stop_status
+2023-11-08 17:25:04,676 DEBUG   HandlerThread:25399 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-08 17:25:04,829 DEBUG   SenderThread:25399 [sender.py:send():380] send: telemetry
+2023-11-08 17:25:05,221 INFO    wandb-upload_0:25399 [upload_job.py:push():131] Uploaded file /var/folders/n1/hjnmtjt130z1l_f85svs6t240000gn/T/tmp_8q5pjz6wandb/ttwdf3d5-wandb-metadata.json
+2023-11-08 17:25:05,246 INFO    wandb-upload_1:25399 [upload_job.py:push():131] Uploaded file /var/folders/n1/hjnmtjt130z1l_f85svs6t240000gn/T/tmp_8q5pjz6wandb/aexodr0b-code/train.py
+2023-11-08 17:25:05,252 INFO    wandb-upload_2:25399 [upload_job.py:push():131] Uploaded file /var/folders/n1/hjnmtjt130z1l_f85svs6t240000gn/T/tmp_8q5pjz6wandb/k1s0rbz0-diff.patch
+2023-11-08 17:25:05,450 INFO    Thread-12 :25399 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/nicholasbardy/git/sdxl_consistency/wandb/run-20231108_172504-q9nrl4tw/files/wandb-metadata.json
+2023-11-08 17:25:05,451 INFO    Thread-12 :25399 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/nicholasbardy/git/sdxl_consistency/wandb/run-20231108_172504-q9nrl4tw/files/code/train.py
+2023-11-08 17:25:05,451 INFO    Thread-12 :25399 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/nicholasbardy/git/sdxl_consistency/wandb/run-20231108_172504-q9nrl4tw/files/requirements.txt
+2023-11-08 17:25:05,451 INFO    Thread-12 :25399 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/nicholasbardy/git/sdxl_consistency/wandb/run-20231108_172504-q9nrl4tw/files/diff.patch
+2023-11-08 17:25:05,451 INFO    Thread-12 :25399 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/nicholasbardy/git/sdxl_consistency/wandb/run-20231108_172504-q9nrl4tw/files/code
+2023-11-08 17:25:07,458 INFO    Thread-12 :25399 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/nicholasbardy/git/sdxl_consistency/wandb/run-20231108_172504-q9nrl4tw/files/output.log
+2023-11-08 17:25:09,168 DEBUG   HandlerThread:25399 [handler.py:handle_request():146] handle_request: status_report
+2023-11-08 17:25:09,479 INFO    Thread-12 :25399 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nicholasbardy/git/sdxl_consistency/wandb/run-20231108_172504-q9nrl4tw/files/output.log
+2023-11-08 17:25:10,480 INFO    Thread-12 :25399 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nicholasbardy/git/sdxl_consistency/wandb/run-20231108_172504-q9nrl4tw/files/output.log
+2023-11-08 17:25:12,487 INFO    Thread-12 :25399 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nicholasbardy/git/sdxl_consistency/wandb/run-20231108_172504-q9nrl4tw/files/output.log
+2023-11-08 17:25:13,489 INFO    Thread-12 :25399 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nicholasbardy/git/sdxl_consistency/wandb/run-20231108_172504-q9nrl4tw/files/output.log
+2023-11-08 17:25:14,194 DEBUG   HandlerThread:25399 [handler.py:handle_request():146] handle_request: status_report
+2023-11-08 17:25:14,284 DEBUG   SenderThread:25399 [sender.py:send():380] send: exit
+2023-11-08 17:25:14,284 INFO    SenderThread:25399 [sender.py:send_exit():585] handling exit code: 1
+2023-11-08 17:25:14,284 INFO    SenderThread:25399 [sender.py:send_exit():587] handling runtime: 9
+2023-11-08 17:25:14,284 INFO    SenderThread:25399 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-11-08 17:25:14,285 INFO    SenderThread:25399 [sender.py:send_exit():593] send defer
+2023-11-08 17:25:14,285 DEBUG   HandlerThread:25399 [handler.py:handle_request():146] handle_request: defer
+2023-11-08 17:25:14,285 INFO    HandlerThread:25399 [handler.py:handle_request_defer():172] handle defer: 0
+2023-11-08 17:25:14,285 DEBUG   SenderThread:25399 [sender.py:send_request():407] send_request: defer
+2023-11-08 17:25:14,285 INFO    SenderThread:25399 [sender.py:send_request_defer():609] handle sender defer: 0
+2023-11-08 17:25:14,285 INFO    SenderThread:25399 [sender.py:transition_state():613] send defer: 1
+2023-11-08 17:25:14,285 DEBUG   HandlerThread:25399 [handler.py:handle_request():146] handle_request: defer
+2023-11-08 17:25:14,285 INFO    HandlerThread:25399 [handler.py:handle_request_defer():172] handle defer: 1
+2023-11-08 17:25:14,285 DEBUG   SenderThread:25399 [sender.py:send_request():407] send_request: defer
+2023-11-08 17:25:14,285 INFO    SenderThread:25399 [sender.py:send_request_defer():609] handle sender defer: 1
+2023-11-08 17:25:14,285 INFO    SenderThread:25399 [sender.py:transition_state():613] send defer: 2
+2023-11-08 17:25:14,285 DEBUG   HandlerThread:25399 [handler.py:handle_request():146] handle_request: defer
+2023-11-08 17:25:14,285 INFO    HandlerThread:25399 [handler.py:handle_request_defer():172] handle defer: 2
+2023-11-08 17:25:14,285 INFO    HandlerThread:25399 [system_monitor.py:finish():203] Stopping system monitor
+2023-11-08 17:25:14,285 DEBUG   SystemMonitor:25399 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2023-11-08 17:25:14,285 DEBUG   SystemMonitor:25399 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2023-11-08 17:25:14,285 INFO    HandlerThread:25399 [interfaces.py:finish():202] Joined cpu monitor
+2023-11-08 17:25:14,285 DEBUG   SystemMonitor:25399 [system_monitor.py:_start():183] Publishing last batch of metrics
+2023-11-08 17:25:14,286 INFO    HandlerThread:25399 [interfaces.py:finish():202] Joined disk monitor
+2023-11-08 17:25:14,286 INFO    HandlerThread:25399 [interfaces.py:finish():202] Joined gpuapple monitor
+2023-11-08 17:25:14,286 INFO    HandlerThread:25399 [interfaces.py:finish():202] Joined memory monitor
+2023-11-08 17:25:14,286 INFO    HandlerThread:25399 [interfaces.py:finish():202] Joined network monitor
+2023-11-08 17:25:14,287 DEBUG   SenderThread:25399 [sender.py:send_request():407] send_request: defer
+2023-11-08 17:25:14,287 INFO    SenderThread:25399 [sender.py:send_request_defer():609] handle sender defer: 2
+2023-11-08 17:25:14,287 INFO    SenderThread:25399 [sender.py:transition_state():613] send defer: 3
+2023-11-08 17:25:14,287 DEBUG   SenderThread:25399 [sender.py:send():380] send: telemetry
+2023-11-08 17:25:14,287 DEBUG   SenderThread:25399 [sender.py:send():380] send: stats
+2023-11-08 17:25:14,287 DEBUG   HandlerThread:25399 [handler.py:handle_request():146] handle_request: defer
+2023-11-08 17:25:14,287 INFO    HandlerThread:25399 [handler.py:handle_request_defer():172] handle defer: 3
+2023-11-08 17:25:14,287 DEBUG   SenderThread:25399 [sender.py:send_request():407] send_request: defer
+2023-11-08 17:25:14,287 INFO    SenderThread:25399 [sender.py:send_request_defer():609] handle sender defer: 3
+2023-11-08 17:25:14,287 INFO    SenderThread:25399 [sender.py:transition_state():613] send defer: 4
+2023-11-08 17:25:14,287 DEBUG   HandlerThread:25399 [handler.py:handle_request():146] handle_request: defer
+2023-11-08 17:25:14,287 INFO    HandlerThread:25399 [handler.py:handle_request_defer():172] handle defer: 4
+2023-11-08 17:25:14,287 DEBUG   SenderThread:25399 [sender.py:send_request():407] send_request: defer
+2023-11-08 17:25:14,287 INFO    SenderThread:25399 [sender.py:send_request_defer():609] handle sender defer: 4
+2023-11-08 17:25:14,287 INFO    SenderThread:25399 [sender.py:transition_state():613] send defer: 5
+2023-11-08 17:25:14,287 DEBUG   HandlerThread:25399 [handler.py:handle_request():146] handle_request: defer
+2023-11-08 17:25:14,287 INFO    HandlerThread:25399 [handler.py:handle_request_defer():172] handle defer: 5
+2023-11-08 17:25:14,287 DEBUG   SenderThread:25399 [sender.py:send():380] send: summary
+2023-11-08 17:25:14,288 INFO    SenderThread:25399 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-11-08 17:25:14,288 DEBUG   SenderThread:25399 [sender.py:send_request():407] send_request: defer
+2023-11-08 17:25:14,288 INFO    SenderThread:25399 [sender.py:send_request_defer():609] handle sender defer: 5
+2023-11-08 17:25:14,288 INFO    SenderThread:25399 [sender.py:transition_state():613] send defer: 6
+2023-11-08 17:25:14,288 DEBUG   HandlerThread:25399 [handler.py:handle_request():146] handle_request: defer
+2023-11-08 17:25:14,288 INFO    HandlerThread:25399 [handler.py:handle_request_defer():172] handle defer: 6
+2023-11-08 17:25:14,288 DEBUG   SenderThread:25399 [sender.py:send_request():407] send_request: defer
+2023-11-08 17:25:14,288 INFO    SenderThread:25399 [sender.py:send_request_defer():609] handle sender defer: 6
+2023-11-08 17:25:14,290 DEBUG   HandlerThread:25399 [handler.py:handle_request():146] handle_request: status_report
+2023-11-08 17:25:14,391 INFO    SenderThread:25399 [sender.py:transition_state():613] send defer: 7
+2023-11-08 17:25:14,392 DEBUG   HandlerThread:25399 [handler.py:handle_request():146] handle_request: defer
+2023-11-08 17:25:14,392 INFO    HandlerThread:25399 [handler.py:handle_request_defer():172] handle defer: 7
+2023-11-08 17:25:14,392 DEBUG   SenderThread:25399 [sender.py:send_request():407] send_request: defer
+2023-11-08 17:25:14,392 INFO    SenderThread:25399 [sender.py:send_request_defer():609] handle sender defer: 7
+2023-11-08 17:25:14,493 INFO    Thread-12 :25399 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nicholasbardy/git/sdxl_consistency/wandb/run-20231108_172504-q9nrl4tw/files/output.log
+2023-11-08 17:25:14,493 INFO    Thread-12 :25399 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nicholasbardy/git/sdxl_consistency/wandb/run-20231108_172504-q9nrl4tw/files/config.yaml
+2023-11-08 17:25:14,493 INFO    Thread-12 :25399 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/nicholasbardy/git/sdxl_consistency/wandb/run-20231108_172504-q9nrl4tw/files/wandb-summary.json
+2023-11-08 17:25:15,290 DEBUG   HandlerThread:25399 [handler.py:handle_request():146] handle_request: poll_exit
+2023-11-08 17:25:16,502 INFO    Thread-12 :25399 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nicholasbardy/git/sdxl_consistency/wandb/run-20231108_172504-q9nrl4tw/files/output.log
+2023-11-08 17:25:17,508 INFO    Thread-12 :25399 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nicholasbardy/git/sdxl_consistency/wandb/run-20231108_172504-q9nrl4tw/files/output.log
+2023-11-08 17:25:17,619 INFO    SenderThread:25399 [sender.py:transition_state():613] send defer: 8
+2023-11-08 17:25:17,619 DEBUG   SenderThread:25399 [sender.py:send_request():407] send_request: poll_exit
+2023-11-08 17:25:17,619 DEBUG   HandlerThread:25399 [handler.py:handle_request():146] handle_request: defer
+2023-11-08 17:25:17,620 INFO    HandlerThread:25399 [handler.py:handle_request_defer():172] handle defer: 8
+2023-11-08 17:25:17,620 DEBUG   SenderThread:25399 [sender.py:send_request():407] send_request: defer
+2023-11-08 17:25:17,621 INFO    SenderThread:25399 [sender.py:send_request_defer():609] handle sender defer: 8
+2023-11-08 17:25:17,621 INFO    SenderThread:25399 [job_builder.py:build():281] Attempting to build job artifact
+2023-11-08 17:25:17,622 INFO    SenderThread:25399 [job_builder.py:_get_source_type():404] no source found
+2023-11-08 17:25:17,622 INFO    SenderThread:25399 [sender.py:transition_state():613] send defer: 9
+2023-11-08 17:25:17,622 DEBUG   HandlerThread:25399 [handler.py:handle_request():146] handle_request: defer
+2023-11-08 17:25:17,622 INFO    HandlerThread:25399 [handler.py:handle_request_defer():172] handle defer: 9
+2023-11-08 17:25:17,623 DEBUG   SenderThread:25399 [sender.py:send_request():407] send_request: defer
+2023-11-08 17:25:17,623 INFO    SenderThread:25399 [sender.py:send_request_defer():609] handle sender defer: 9
+2023-11-08 17:25:17,623 INFO    SenderThread:25399 [dir_watcher.py:finish():358] shutting down directory watcher
+2023-11-08 17:25:18,512 INFO    SenderThread:25399 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nicholasbardy/git/sdxl_consistency/wandb/run-20231108_172504-q9nrl4tw/files/output.log
+2023-11-08 17:25:18,513 INFO    SenderThread:25399 [dir_watcher.py:finish():388] scan: /Users/nicholasbardy/git/sdxl_consistency/wandb/run-20231108_172504-q9nrl4tw/files
+2023-11-08 17:25:18,514 INFO    SenderThread:25399 [dir_watcher.py:finish():402] scan save: /Users/nicholasbardy/git/sdxl_consistency/wandb/run-20231108_172504-q9nrl4tw/files/diff.patch diff.patch
+2023-11-08 17:25:18,514 INFO    SenderThread:25399 [dir_watcher.py:finish():402] scan save: /Users/nicholasbardy/git/sdxl_consistency/wandb/run-20231108_172504-q9nrl4tw/files/requirements.txt requirements.txt
+2023-11-08 17:25:18,514 INFO    SenderThread:25399 [dir_watcher.py:finish():402] scan save: /Users/nicholasbardy/git/sdxl_consistency/wandb/run-20231108_172504-q9nrl4tw/files/output.log output.log
+2023-11-08 17:25:18,514 INFO    SenderThread:25399 [dir_watcher.py:finish():402] scan save: /Users/nicholasbardy/git/sdxl_consistency/wandb/run-20231108_172504-q9nrl4tw/files/config.yaml config.yaml
+2023-11-08 17:25:18,514 INFO    SenderThread:25399 [dir_watcher.py:finish():402] scan save: /Users/nicholasbardy/git/sdxl_consistency/wandb/run-20231108_172504-q9nrl4tw/files/wandb-summary.json wandb-summary.json
+2023-11-08 17:25:18,515 INFO    SenderThread:25399 [dir_watcher.py:finish():402] scan save: /Users/nicholasbardy/git/sdxl_consistency/wandb/run-20231108_172504-q9nrl4tw/files/wandb-metadata.json wandb-metadata.json
+2023-11-08 17:25:18,515 INFO    SenderThread:25399 [dir_watcher.py:finish():402] scan save: /Users/nicholasbardy/git/sdxl_consistency/wandb/run-20231108_172504-q9nrl4tw/files/code/train.py code/train.py
+2023-11-08 17:25:18,515 INFO    SenderThread:25399 [sender.py:transition_state():613] send defer: 10
+2023-11-08 17:25:18,517 DEBUG   HandlerThread:25399 [handler.py:handle_request():146] handle_request: defer
+2023-11-08 17:25:18,518 INFO    HandlerThread:25399 [handler.py:handle_request_defer():172] handle defer: 10
+2023-11-08 17:25:18,533 DEBUG   SenderThread:25399 [sender.py:send_request():407] send_request: defer
+2023-11-08 17:25:18,534 INFO    SenderThread:25399 [sender.py:send_request_defer():609] handle sender defer: 10
+2023-11-08 17:25:18,534 INFO    SenderThread:25399 [file_pusher.py:finish():175] shutting down file pusher
+2023-11-08 17:25:18,872 INFO    wandb-upload_1:25399 [upload_job.py:push():131] Uploaded file /Users/nicholasbardy/git/sdxl_consistency/wandb/run-20231108_172504-q9nrl4tw/files/config.yaml
+2023-11-08 17:25:18,874 INFO    wandb-upload_2:25399 [upload_job.py:push():131] Uploaded file /Users/nicholasbardy/git/sdxl_consistency/wandb/run-20231108_172504-q9nrl4tw/files/wandb-summary.json
+2023-11-08 17:25:18,875 INFO    wandb-upload_0:25399 [upload_job.py:push():131] Uploaded file /Users/nicholasbardy/git/sdxl_consistency/wandb/run-20231108_172504-q9nrl4tw/files/requirements.txt
+2023-11-08 17:25:19,088 INFO    wandb-upload_3:25399 [upload_job.py:push():131] Uploaded file /Users/nicholasbardy/git/sdxl_consistency/wandb/run-20231108_172504-q9nrl4tw/files/output.log
+2023-11-08 17:25:19,292 INFO    Thread-11 :25399 [sender.py:transition_state():613] send defer: 11
+2023-11-08 17:25:19,294 DEBUG   HandlerThread:25399 [handler.py:handle_request():146] handle_request: defer
+2023-11-08 17:25:19,294 INFO    HandlerThread:25399 [handler.py:handle_request_defer():172] handle defer: 11
+2023-11-08 17:25:19,294 DEBUG   SenderThread:25399 [sender.py:send_request():407] send_request: defer
+2023-11-08 17:25:19,295 INFO    SenderThread:25399 [sender.py:send_request_defer():609] handle sender defer: 11
+2023-11-08 17:25:19,295 INFO    SenderThread:25399 [file_pusher.py:join():181] waiting for file pusher
+2023-11-08 17:25:19,295 INFO    SenderThread:25399 [sender.py:transition_state():613] send defer: 12
+2023-11-08 17:25:19,295 DEBUG   HandlerThread:25399 [handler.py:handle_request():146] handle_request: defer
+2023-11-08 17:25:19,295 INFO    HandlerThread:25399 [handler.py:handle_request_defer():172] handle defer: 12
+2023-11-08 17:25:19,295 DEBUG   HandlerThread:25399 [handler.py:handle_request():146] handle_request: status_report
+2023-11-08 17:25:19,297 DEBUG   SenderThread:25399 [sender.py:send_request():407] send_request: defer
+2023-11-08 17:25:19,297 INFO    SenderThread:25399 [sender.py:send_request_defer():609] handle sender defer: 12
+2023-11-08 17:25:19,297 INFO    SenderThread:25399 [file_stream.py:finish():595] file stream finish called
+2023-11-08 17:25:19,396 INFO    SenderThread:25399 [file_stream.py:finish():599] file stream finish is done
+2023-11-08 17:25:19,396 INFO    SenderThread:25399 [sender.py:transition_state():613] send defer: 13
+2023-11-08 17:25:19,396 DEBUG   HandlerThread:25399 [handler.py:handle_request():146] handle_request: defer
+2023-11-08 17:25:19,397 INFO    HandlerThread:25399 [handler.py:handle_request_defer():172] handle defer: 13
+2023-11-08 17:25:19,397 DEBUG   SenderThread:25399 [sender.py:send_request():407] send_request: defer
+2023-11-08 17:25:19,397 INFO    SenderThread:25399 [sender.py:send_request_defer():609] handle sender defer: 13
+2023-11-08 17:25:19,398 INFO    SenderThread:25399 [sender.py:transition_state():613] send defer: 14
+2023-11-08 17:25:19,399 DEBUG   HandlerThread:25399 [handler.py:handle_request():146] handle_request: defer
+2023-11-08 17:25:19,399 DEBUG   SenderThread:25399 [sender.py:send():380] send: final
+2023-11-08 17:25:19,399 INFO    HandlerThread:25399 [handler.py:handle_request_defer():172] handle defer: 14
+2023-11-08 17:25:19,399 DEBUG   SenderThread:25399 [sender.py:send():380] send: footer
+2023-11-08 17:25:19,400 DEBUG   SenderThread:25399 [sender.py:send_request():407] send_request: defer
+2023-11-08 17:25:19,400 INFO    SenderThread:25399 [sender.py:send_request_defer():609] handle sender defer: 14
+2023-11-08 17:25:19,401 DEBUG   HandlerThread:25399 [handler.py:handle_request():146] handle_request: poll_exit
+2023-11-08 17:25:19,402 DEBUG   HandlerThread:25399 [handler.py:handle_request():146] handle_request: server_info
+2023-11-08 17:25:19,403 DEBUG   HandlerThread:25399 [handler.py:handle_request():146] handle_request: get_summary
+2023-11-08 17:25:19,403 DEBUG   SenderThread:25399 [sender.py:send_request():407] send_request: poll_exit
+2023-11-08 17:25:19,404 DEBUG   HandlerThread:25399 [handler.py:handle_request():146] handle_request: sampled_history
+2023-11-08 17:25:19,405 DEBUG   SenderThread:25399 [sender.py:send_request():407] send_request: server_info
+2023-11-08 17:25:19,405 DEBUG   HandlerThread:25399 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-08 17:25:19,410 DEBUG   HandlerThread:25399 [handler.py:handle_request():146] handle_request: job_info
+2023-11-08 17:25:19,474 DEBUG   SenderThread:25399 [sender.py:send_request():407] send_request: job_info
+2023-11-08 17:25:19,474 INFO    MainThread:25399 [wandb_run.py:_footer_history_summary_info():3599] rendering history
+2023-11-08 17:25:19,474 INFO    MainThread:25399 [wandb_run.py:_footer_history_summary_info():3631] rendering summary
+2023-11-08 17:25:19,475 INFO    MainThread:25399 [wandb_run.py:_footer_sync_info():3558] logging synced files
+2023-11-08 17:25:19,475 DEBUG   HandlerThread:25399 [handler.py:handle_request():146] handle_request: shutdown
+2023-11-08 17:25:19,475 INFO    HandlerThread:25399 [handler.py:finish():866] shutting down handler
+2023-11-08 17:25:20,415 INFO    WriterThread:25399 [datastore.py:close():294] close: /Users/nicholasbardy/git/sdxl_consistency/wandb/run-20231108_172504-q9nrl4tw/run-q9nrl4tw.wandb
+2023-11-08 17:25:20,479 INFO    SenderThread:25399 [sender.py:finish():1534] shutting down sender
+2023-11-08 17:25:20,479 INFO    SenderThread:25399 [file_pusher.py:finish():175] shutting down file pusher
+2023-11-08 17:25:20,479 INFO    SenderThread:25399 [file_pusher.py:join():181] waiting for file pusher

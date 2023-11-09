@@ -144,14 +144,12 @@ from torchvision.transforms import ToTensor, Resize
 
 
 import torchvision
-from torchvision.transforms import ToTensor, CenterCrop
 
 def get_train_dataloader(args):
     dataset_name = args.dataset_name
     dataset = load_dataset(dataset_name)["train"]
-    min_size = 1280  # Define your minimum size
     transform = torchvision.transforms.Compose([
-        CenterCrop(min_size),  # Center crop all images to have the same size
+        Resize((1280, 1280)),  # Resize all images to have the same size
         ToTensor()  # Convert PIL Image to tensor
     ])
 
@@ -163,12 +161,8 @@ def get_train_dataloader(args):
     for i, item in enumerate(dataset):
         try:
             print(f"Mapping item {i}")
-            # Check if the image size is larger than the minimum size
-            if item["image"].size[0] >= min_size and item["image"].size[1] >= min_size:
-                item = {"pixel_values": transform(item["image"])}
-                all_items.append(item)
-            else:
-                print(f"Skipping item {i} due to small size")
+            item = {"image": transform(item["image"])}
+            all_items.append(item)
         except Exception as e:
             print(f"Error while mapping item {i}: {e}")
 
@@ -196,7 +190,7 @@ def train():
     latent_projetor = LatentProjector().to(device, dtype=dtype)
     latent_projetor.train()
 
-    sdxl_vae = get_sdxl_vae()
+    sdxl_vae = get_sd_vae()
     consitency_decoder = get_consistency_decoder()
 
 
@@ -212,7 +206,7 @@ def train():
         train_loss = 0.0
         for step, batch in enumerate(train_dataloader):
             # with accelerator.accumulate(latent_projetor):
-            target = batch["pixel_values"].to(device, dtype=dtype)
+            target = batch["pixel_values"].to(weight_dtype)
 
             # https://github.com/huggingface/diffusers/blob/main/src/diffusers/models/autoencoder_kl.py
             posterior = sdxl_vae.encode(target).latent_dist

@@ -196,7 +196,7 @@ def train():
     latent_projetor = LatentProjector().to(device, dtype=dtype)
     latent_projetor.train()
 
-    sdxl_vae = get_sdxl_vae()
+    sdxl_vae = get_sd_vae()
     consitency_decoder = get_consistency_decoder()
 
 
@@ -212,7 +212,7 @@ def train():
         train_loss = 0.0
         for step, batch in enumerate(train_dataloader):
             # with accelerator.accumulate(latent_projetor):
-            target = batch["pixel_values"].to(device, dtype=dtype)
+            target = batch["pixel_values"].to(weight_dtype)
 
             # https://github.com/huggingface/diffusers/blob/main/src/diffusers/models/autoencoder_kl.py
             posterior = sdxl_vae.encode(target).latent_dist

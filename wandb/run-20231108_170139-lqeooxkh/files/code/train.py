@@ -119,63 +119,13 @@ class LatentProjector(nn.Module):
 
 
 # Loading dataset_name from args
-# def get_train_dataloader(args):
-#     dataset_name = args.dataset_name
-
-#     dataset = load_dataset(dataset_name)["train"]
-#     dataloader = torch.utils.data.DataLoader(dataset, batch_size=args.train_batch_size, shuffle=True)
-
-#     return dataloader   
-
-from torchvision.transforms import ToTensor, Resize
-
-# def get_train_dataloader(args):
-#     dataset_name = args.dataset_name
-#     dataset = load_dataset(dataset_name)["train"]
-#     transform = ToTensor()
-#     print("Mapping")
-    
-#     # for testing
-#     dataset = dataset.select(range(100))
-#     dataset = dataset.map(lambda x: {"image": transform(x["image"])})
-#     print("Done mapping")
-#     dataloader = torch.utils.data.DataLoader(dataset, batch_size=args.train_batch_size, shuffle=True)
-#     return dataloader
-
-
-import torchvision
-from torchvision.transforms import ToTensor, CenterCrop
-
 def get_train_dataloader(args):
     dataset_name = args.dataset_name
+
     dataset = load_dataset(dataset_name)["train"]
-    min_size = 1280  # Define your minimum size
-    transform = torchvision.transforms.Compose([
-        CenterCrop(min_size),  # Center crop all images to have the same size
-        ToTensor()  # Convert PIL Image to tensor
-    ])
+    dataloader = torch.utils.data.DataLoader(dataset, batch_size=args.train_batch_size, shuffle=True)
 
-    # Use only the first 100 items for debugging
-    dataset = dataset.select(range(100))
-
-    print("Mapping")
-    all_items = []
-    for i, item in enumerate(dataset):
-        try:
-            print(f"Mapping item {i}")
-            # Check if the image size is larger than the minimum size
-            if item["image"].size[0] >= min_size and item["image"].size[1] >= min_size:
-                item = {"pixel_values": transform(item["image"])}
-                all_items.append(item)
-            else:
-                print(f"Skipping item {i} due to small size")
-        except Exception as e:
-            print(f"Error while mapping item {i}: {e}")
-
-    print("Done mapping")
-
-    dataloader = torch.utils.data.DataLoader(all_items, batch_size=args.train_batch_size, shuffle=True)
-    return dataloader
+    return dataloader   
 
 
 def train():
@@ -196,8 +146,8 @@ def train():
     latent_projetor = LatentProjector().to(device, dtype=dtype)
     latent_projetor.train()
 
-    sdxl_vae = get_sdxl_vae()
-    consitency_decoder = get_consistency_decoder()
+    sdxl_vae = get_sd_vae()
+    consitency_decoder = get_consistency_decoder().to(device, dtype=dtype)
 
 
     weight_dtype = torch.float16
@@ -212,7 +162,7 @@ def train():
         train_loss = 0.0
         for step, batch in enumerate(train_dataloader):
             # with accelerator.accumulate(latent_projetor):
-            target = batch["pixel_values"].to(device, dtype=dtype)
+            target = batch["pixel_values"].to(weight_dtype)
 
             # https://github.com/huggingface/diffusers/blob/main/src/diffusers/models/autoencoder_kl.py
             posterior = sdxl_vae.encode(target).latent_dist

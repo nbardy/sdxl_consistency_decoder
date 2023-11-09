@@ -1,0 +1,42 @@
+Setting up [LPIPS] perceptual loss: trunk [alex], v[0.1], spatial [off]
+Loading model from: /Users/nicholasbardy/.pyenv/versions/3.9.9/lib/python3.9/site-packages/lpips/weights/v0.1/alex.pth
+/Users/nicholasbardy/.pyenv/versions/3.9.9/lib/python3.9/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/Users/nicholasbardy/.pyenv/versions/3.9.9/lib/python3.9/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=AlexNet_Weights.IMAGENET1K_V1`. You can also use `weights=AlexNet_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Keyword arguments {'device': 'cuda:0'} are not expected by StableDiffusionPipeline and will be ignored.
+Loading pipeline components...:  57%|██████████████████████████████████████████████████████▎                                        | 4/7 [00:00<00:00,  7.84it/s]
+Loading pipeline components...:  71%|███████████████████████████████████████████████████████████████████▊                           | 5/7 [00:00<00:00,  4.22it/s]`text_config_dict` is provided which will be used to initialize `CLIPTextConfig`. The value `text_config["id2label"]` will be overriden.
+`text_config_dict` is provided which will be used to initialize `CLIPTextConfig`. The value `text_config["bos_token_id"]` will be overriden.
+`text_config_dict` is provided which will be used to initialize `CLIPTextConfig`. The value `text_config["eos_token_id"]` will be overriden.
+Loading pipeline components...: 100%|███████████████████████████████████████████████████████████████████████████████████████████████| 7/7 [00:01<00:00,  5.03it/s]
+Traceback (most recent call last):
+  File "/Users/nicholasbardy/.pyenv/versions/3.9.9/lib/python3.9/site-packages/torch/utils/data/_utils/collate.py", line 127, in collate
+    return elem_type({key: collate([d[key] for d in batch], collate_fn_map=collate_fn_map) for key in elem})
+  File "/Users/nicholasbardy/.pyenv/versions/3.9.9/lib/python3.9/site-packages/torch/utils/data/_utils/collate.py", line 127, in <dictcomp>
+    return elem_type({key: collate([d[key] for d in batch], collate_fn_map=collate_fn_map) for key in elem})
+  File "/Users/nicholasbardy/.pyenv/versions/3.9.9/lib/python3.9/site-packages/torch/utils/data/_utils/collate.py", line 150, in collate
+    raise TypeError(default_collate_err_msg_format.format(elem_type))
+TypeError: default_collate: batch must contain tensors, numpy arrays, numbers, dicts or lists; found <class 'PIL.JpegImagePlugin.JpegImageFile'>
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "/Users/nicholasbardy/git/sdxl_consistency/train.py", line 204, in <module>
+    train()
+  File "/Users/nicholasbardy/git/sdxl_consistency/train.py", line 163, in train
+    for step, batch in enumerate(train_dataloader):
+  File "/Users/nicholasbardy/.pyenv/versions/3.9.9/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 633, in __next__
+    data = self._next_data()
+  File "/Users/nicholasbardy/.pyenv/versions/3.9.9/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 677, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/Users/nicholasbardy/.pyenv/versions/3.9.9/lib/python3.9/site-packages/torch/utils/data/_utils/fetch.py", line 54, in fetch
+    return self.collate_fn(data)
+  File "/Users/nicholasbardy/.pyenv/versions/3.9.9/lib/python3.9/site-packages/torch/utils/data/_utils/collate.py", line 265, in default_collate
+    return collate(batch, collate_fn_map=default_collate_fn_map)
+  File "/Users/nicholasbardy/.pyenv/versions/3.9.9/lib/python3.9/site-packages/torch/utils/data/_utils/collate.py", line 130, in collate
+    return {key: collate([d[key] for d in batch], collate_fn_map=collate_fn_map) for key in elem}
+  File "/Users/nicholasbardy/.pyenv/versions/3.9.9/lib/python3.9/site-packages/torch/utils/data/_utils/collate.py", line 130, in <dictcomp>
+    return {key: collate([d[key] for d in batch], collate_fn_map=collate_fn_map) for key in elem}
+  File "/Users/nicholasbardy/.pyenv/versions/3.9.9/lib/python3.9/site-packages/torch/utils/data/_utils/collate.py", line 150, in collate
+    raise TypeError(default_collate_err_msg_format.format(elem_type))
+TypeError: default_collate: batch must contain tensors, numpy arrays, numbers, dicts or lists; found <class 'PIL.JpegImagePlugin.JpegImageFile'>
+Consistency decoder loaded

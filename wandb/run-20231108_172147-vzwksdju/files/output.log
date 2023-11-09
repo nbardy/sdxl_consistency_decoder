@@ -1,0 +1,121 @@
+Mapping
+Mapping item 0
+Mapping item 1
+Mapping item 2
+Mapping item 3
+Mapping item 4
+Mapping item 5
+Mapping item 6
+Mapping item 7
+Mapping item 8
+Mapping item 9
+Mapping item 10
+Mapping item 11
+Mapping item 12
+Mapping item 13
+Mapping item 14
+Mapping item 15
+Mapping item 16
+Mapping item 17
+Mapping item 18
+Mapping item 19
+Mapping item 20
+Mapping item 21
+Mapping item 22
+Mapping item 23
+Mapping item 24
+Mapping item 25
+Mapping item 26
+Mapping item 27
+Mapping item 28
+Mapping item 29
+Mapping item 30
+Mapping item 31
+Mapping item 32
+Mapping item 33
+Mapping item 34
+Mapping item 35
+Mapping item 36
+Mapping item 37
+Mapping item 38
+Mapping item 39
+Mapping item 40
+Mapping item 41
+Mapping item 42
+Mapping item 43
+Mapping item 44
+Mapping item 45
+Mapping item 46
+Mapping item 47
+Mapping item 48
+Mapping item 49
+Mapping item 50
+Mapping item 51
+Mapping item 52
+Mapping item 53
+Mapping item 54
+Mapping item 55
+Mapping item 56
+Mapping item 57
+Mapping item 58
+Mapping item 59
+Mapping item 60
+Mapping item 61
+Mapping item 62
+Mapping item 63
+Mapping item 64
+Mapping item 65
+Mapping item 66
+Mapping item 67
+Mapping item 68
+Mapping item 69
+Mapping item 70
+Mapping item 71
+Mapping item 72
+Mapping item 73
+Mapping item 74
+Mapping item 75
+Mapping item 76
+Mapping item 77
+Mapping item 78
+Mapping item 79
+Mapping item 80
+Mapping item 81
+Mapping item 82
+Mapping item 83
+Mapping item 84
+/Users/nicholasbardy/.pyenv/versions/3.9.9/lib/python3.9/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/Users/nicholasbardy/.pyenv/versions/3.9.9/lib/python3.9/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=AlexNet_Weights.IMAGENET1K_V1`. You can also use `weights=AlexNet_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Keyword arguments {'device': 'cuda:0'} are not expected by StableDiffusionPipeline and will be ignored.
+Loading pipeline components...:  57%|██████████████████████████████████████████████████████▎                                        | 4/7 [00:00<00:00,  9.13it/s]`text_config_dict` is provided which will be used to initialize `CLIPTextConfig`. The value `text_config["id2label"]` will be overriden.
+`text_config_dict` is provided which will be used to initialize `CLIPTextConfig`. The value `text_config["bos_token_id"]` will be overriden.
+`text_config_dict` is provided which will be used to initialize `CLIPTextConfig`. The value `text_config["eos_token_id"]` will be overriden.
+Mapping item 85
+Mapping item 86
+Mapping item 87
+Mapping item 88
+Mapping item 89
+Mapping item 90
+Mapping item 91
+Mapping item 92
+Mapping item 93
+Mapping item 94
+Mapping item 95
+Mapping item 96
+Mapping item 97
+Mapping item 98
+Mapping item 99
+Done mapping
+Setting up [LPIPS] perceptual loss: trunk [alex], v[0.1], spatial [off]
+Loading model from: /Users/nicholasbardy/.pyenv/versions/3.9.9/lib/python3.9/site-packages/lpips/weights/v0.1/alex.pth
+Loading pipeline components...: 100%|███████████████████████████████████████████████████████████████████████████████████████████████| 7/7 [00:01<00:00,  5.07it/s]
+Loading consistency decoder
+Traceback (most recent call last):
+  File "/Users/nicholasbardy/git/sdxl_consistency/train.py", line 248, in <module>
+    train()
+  File "/Users/nicholasbardy/git/sdxl_consistency/train.py", line 209, in train
+    target = batch["pixel_values"].to(weight_dtype)
+KeyError: 'pixel_values'
+Consistency decoder loaded

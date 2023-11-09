@@ -1,0 +1,89 @@
+2023-11-08 17:14:08,259 INFO    StreamThr :24468 [internal.py:wandb_internal():86] W&B internal server running at pid: 24468, started at: 2023-11-08 17:14:08.259401
+2023-11-08 17:14:08,260 DEBUG   HandlerThread:24468 [handler.py:handle_request():146] handle_request: status
+2023-11-08 17:14:08,266 INFO    WriterThread:24468 [datastore.py:open_for_write():85] open: /Users/nicholasbardy/git/sdxl_consistency/wandb/run-20231108_171408-2vybygt0/run-2vybygt0.wandb
+2023-11-08 17:14:08,267 DEBUG   SenderThread:24468 [sender.py:send():380] send: header
+2023-11-08 17:14:08,286 DEBUG   SenderThread:24468 [sender.py:send():380] send: run
+2023-11-08 17:14:08,567 INFO    SenderThread:24468 [dir_watcher.py:__init__():211] watching files in: /Users/nicholasbardy/git/sdxl_consistency/wandb/run-20231108_171408-2vybygt0/files
+2023-11-08 17:14:08,567 INFO    SenderThread:24468 [sender.py:_start_run_threads():1122] run started: 2vybygt0 with start time 1699492448.260583
+2023-11-08 17:14:08,577 DEBUG   HandlerThread:24468 [handler.py:handle_request():146] handle_request: check_version
+2023-11-08 17:14:08,577 DEBUG   SenderThread:24468 [sender.py:send_request():407] send_request: check_version
+2023-11-08 17:14:08,639 DEBUG   HandlerThread:24468 [handler.py:handle_request():146] handle_request: run_start
+2023-11-08 17:14:08,645 DEBUG   HandlerThread:24468 [system_info.py:__init__():32] System info init
+2023-11-08 17:14:08,645 DEBUG   HandlerThread:24468 [system_info.py:__init__():47] System info init done
+2023-11-08 17:14:08,645 INFO    HandlerThread:24468 [system_monitor.py:start():194] Starting system monitor
+2023-11-08 17:14:08,646 INFO    SystemMonitor:24468 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2023-11-08 17:14:08,646 INFO    HandlerThread:24468 [system_monitor.py:probe():214] Collecting system info
+2023-11-08 17:14:08,646 INFO    SystemMonitor:24468 [interfaces.py:start():190] Started cpu monitoring
+2023-11-08 17:14:08,646 INFO    SystemMonitor:24468 [interfaces.py:start():190] Started disk monitoring
+2023-11-08 17:14:08,647 INFO    SystemMonitor:24468 [interfaces.py:start():190] Started gpuapple monitoring
+2023-11-08 17:14:08,674 DEBUG   HandlerThread:24468 [system_info.py:probe():196] Probing system
+2023-11-08 17:14:08,678 INFO    SystemMonitor:24468 [interfaces.py:start():190] Started memory monitoring
+2023-11-08 17:14:08,679 INFO    SystemMonitor:24468 [interfaces.py:start():190] Started network monitoring
+2023-11-08 17:14:08,680 DEBUG   HandlerThread:24468 [system_info.py:_probe_git():181] Probing git
+2023-11-08 17:14:08,691 DEBUG   HandlerThread:24468 [system_info.py:_probe_git():189] Probing git done
+2023-11-08 17:14:08,691 DEBUG   HandlerThread:24468 [system_info.py:probe():244] Probing system done
+2023-11-08 17:14:08,691 DEBUG   HandlerThread:24468 [system_monitor.py:probe():223] {'os': 'macOS-13.0.1-arm64-arm-64bit', 'python': '3.9.9', 'heartbeatAt': '2023-11-09T01:14:08.676378', 'startedAt': '2023-11-09T01:14:08.251904', 'docker': None, 'cuda': None, 'args': ('--dataset_name', 'lambdalabs/pokemon-blip-captions'), 'state': 'running', 'program': '/Users/nicholasbardy/git/sdxl_consistency/train.py', 'codePathLocal': 'train.py', 'codePath': 'train.py', 'git': {'remote': None, 'commit': '93191c58cd3449a7b296efbb86bb696fa350c57e'}, 'email': 'nicholasbardy@gmail.com', 'root': '/Users/nicholasbardy/git/sdxl_consistency', 'host': 'Nicholass-MacBook-Pro.local', 'username': 'nicholasbardy', 'executable': '/Users/nicholasbardy/.pyenv/versions/3.9.9/bin/python', 'cpu_count': 10, 'cpu_count_logical': 10, 'disk': {'/': {'total': 1858.1917190551758, 'used': 12.082839965820312}}, 'gpuapple': {'type': 'arm', 'vendor': 'Apple'}, 'memory': {'total': 64.0}}
+2023-11-08 17:14:08,691 INFO    HandlerThread:24468 [system_monitor.py:probe():224] Finished collecting system info
+2023-11-08 17:14:08,691 INFO    HandlerThread:24468 [system_monitor.py:probe():227] Publishing system info
+2023-11-08 17:14:08,691 DEBUG   HandlerThread:24468 [system_info.py:_save_pip():52] Saving list of pip packages installed into the current environment
+2023-11-08 17:14:08,692 DEBUG   HandlerThread:24468 [system_info.py:_save_pip():68] Saving pip packages done
+2023-11-08 17:14:08,692 DEBUG   HandlerThread:24468 [system_info.py:_save_code():90] Saving code
+2023-11-08 17:14:08,699 DEBUG   HandlerThread:24468 [system_info.py:_save_code():111] Saving code done
+2023-11-08 17:14:08,700 DEBUG   HandlerThread:24468 [system_info.py:_save_patches():128] Saving git patches
+2023-11-08 17:14:08,782 DEBUG   HandlerThread:24468 [system_info.py:_save_patches():170] Saving git patches done
+2023-11-08 17:14:08,782 INFO    HandlerThread:24468 [system_monitor.py:probe():229] Finished publishing system info
+2023-11-08 17:14:08,791 DEBUG   SenderThread:24468 [sender.py:send():380] send: files
+2023-11-08 17:14:08,791 INFO    SenderThread:24468 [sender.py:_save_file():1378] saving file wandb-metadata.json with policy now
+2023-11-08 17:14:08,791 INFO    SenderThread:24468 [sender.py:_save_file():1378] saving file code/train.py with policy now
+2023-11-08 17:14:08,791 INFO    SenderThread:24468 [sender.py:_save_file():1378] saving file diff.patch with policy now
+2023-11-08 17:14:08,797 DEBUG   HandlerThread:24468 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-08 17:14:08,797 DEBUG   HandlerThread:24468 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-08 17:14:08,797 DEBUG   SenderThread:24468 [sender.py:send_request():407] send_request: stop_status
+2023-11-08 17:14:09,002 DEBUG   SenderThread:24468 [sender.py:send():380] send: telemetry
+2023-11-08 17:14:09,382 INFO    wandb-upload_0:24468 [upload_job.py:push():131] Uploaded file /var/folders/n1/hjnmtjt130z1l_f85svs6t240000gn/T/tmpekr9wk2iwandb/5ej0kowl-wandb-metadata.json
+2023-11-08 17:14:09,386 INFO    wandb-upload_1:24468 [upload_job.py:push():131] Uploaded file /var/folders/n1/hjnmtjt130z1l_f85svs6t240000gn/T/tmpekr9wk2iwandb/ehm8alok-code/train.py
+2023-11-08 17:14:09,392 INFO    wandb-upload_2:24468 [upload_job.py:push():131] Uploaded file /var/folders/n1/hjnmtjt130z1l_f85svs6t240000gn/T/tmpekr9wk2iwandb/sjx4n6nu-diff.patch
+2023-11-08 17:14:09,573 INFO    Thread-12 :24468 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/nicholasbardy/git/sdxl_consistency/wandb/run-20231108_171408-2vybygt0/files/wandb-metadata.json
+2023-11-08 17:14:09,573 INFO    Thread-12 :24468 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/nicholasbardy/git/sdxl_consistency/wandb/run-20231108_171408-2vybygt0/files/requirements.txt
+2023-11-08 17:14:09,573 INFO    Thread-12 :24468 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/nicholasbardy/git/sdxl_consistency/wandb/run-20231108_171408-2vybygt0/files/diff.patch
+2023-11-08 17:14:09,574 INFO    Thread-12 :24468 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/nicholasbardy/git/sdxl_consistency/wandb/run-20231108_171408-2vybygt0/files/code/train.py
+2023-11-08 17:14:09,574 INFO    Thread-12 :24468 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/nicholasbardy/git/sdxl_consistency/wandb/run-20231108_171408-2vybygt0/files/code
+2023-11-08 17:14:10,577 INFO    Thread-12 :24468 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/nicholasbardy/git/sdxl_consistency/wandb/run-20231108_171408-2vybygt0/files/output.log
+2023-11-08 17:14:12,587 INFO    Thread-12 :24468 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nicholasbardy/git/sdxl_consistency/wandb/run-20231108_171408-2vybygt0/files/output.log
+2023-11-08 17:14:13,271 DEBUG   HandlerThread:24468 [handler.py:handle_request():146] handle_request: status_report
+2023-11-08 17:14:18,289 DEBUG   HandlerThread:24468 [handler.py:handle_request():146] handle_request: status_report
+2023-11-08 17:14:23,310 DEBUG   HandlerThread:24468 [handler.py:handle_request():146] handle_request: status_report
+2023-11-08 17:14:23,918 DEBUG   HandlerThread:24468 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-08 17:14:23,950 DEBUG   HandlerThread:24468 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-08 17:14:23,951 DEBUG   SenderThread:24468 [sender.py:send_request():407] send_request: stop_status
+2023-11-08 17:14:29,125 DEBUG   HandlerThread:24468 [handler.py:handle_request():146] handle_request: status_report
+2023-11-08 17:14:32,647 INFO    Thread-12 :24468 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nicholasbardy/git/sdxl_consistency/wandb/run-20231108_171408-2vybygt0/files/output.log
+2023-11-08 17:14:34,635 DEBUG   HandlerThread:24468 [handler.py:handle_request():146] handle_request: status_report
+2023-11-08 17:14:39,653 DEBUG   HandlerThread:24468 [handler.py:handle_request():146] handle_request: status_report
+2023-11-08 17:14:39,715 DEBUG   HandlerThread:24468 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-08 17:14:40,404 DEBUG   HandlerThread:24468 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-08 17:14:40,404 DEBUG   SenderThread:24468 [sender.py:send_request():407] send_request: stop_status
+2023-11-08 17:14:40,677 INFO    Thread-12 :24468 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nicholasbardy/git/sdxl_consistency/wandb/run-20231108_171408-2vybygt0/files/config.yaml
+2023-11-08 17:14:45,500 DEBUG   HandlerThread:24468 [handler.py:handle_request():146] handle_request: status_report
+2023-11-08 17:14:50,529 DEBUG   HandlerThread:24468 [handler.py:handle_request():146] handle_request: status_report
+2023-11-08 17:14:54,989 DEBUG   HandlerThread:24468 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-08 17:14:55,506 DEBUG   HandlerThread:24468 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-08 17:14:55,506 DEBUG   SenderThread:24468 [sender.py:send_request():407] send_request: stop_status
+2023-11-08 17:14:55,629 DEBUG   HandlerThread:24468 [handler.py:handle_request():146] handle_request: status_report
+2023-11-08 17:15:00,644 DEBUG   HandlerThread:24468 [handler.py:handle_request():146] handle_request: status_report
+2023-11-08 17:15:05,651 DEBUG   HandlerThread:24468 [handler.py:handle_request():146] handle_request: status_report
+2023-11-08 17:15:08,684 DEBUG   SystemMonitor:24468 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2023-11-08 17:15:08,686 DEBUG   SenderThread:24468 [sender.py:send():380] send: telemetry
+2023-11-08 17:15:08,686 DEBUG   SenderThread:24468 [sender.py:send():380] send: stats
+2023-11-08 17:15:10,079 DEBUG   HandlerThread:24468 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-08 17:15:10,668 DEBUG   HandlerThread:24468 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-08 17:15:10,669 DEBUG   SenderThread:24468 [sender.py:send_request():407] send_request: stop_status
+2023-11-08 17:15:10,851 DEBUG   HandlerThread:24468 [handler.py:handle_request():146] handle_request: status_report
+2023-11-08 17:15:11,796 INFO    Thread-12 :24468 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nicholasbardy/git/sdxl_consistency/wandb/run-20231108_171408-2vybygt0/files/config.yaml
+2023-11-08 17:15:16,371 DEBUG   HandlerThread:24468 [handler.py:handle_request():146] handle_request: status_report
+2023-11-08 17:15:21,387 DEBUG   HandlerThread:24468 [handler.py:handle_request():146] handle_request: status_report
+2023-11-08 17:15:26,172 DEBUG   HandlerThread:24468 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-08 17:15:26,172 DEBUG   HandlerThread:24468 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-08 17:15:26,172 DEBUG   SenderThread:24468 [sender.py:send_request():407] send_request: stop_status
+2023-11-08 17:15:26,763 DEBUG   HandlerThread:24468 [handler.py:handle_request():146] handle_request: status_report
+2023-11-08 17:15:28,864 INFO    Thread-12 :24468 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nicholasbardy/git/sdxl_consistency/wandb/run-20231108_171408-2vybygt0/files/output.log

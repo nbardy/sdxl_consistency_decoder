@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/Users/nicholasbardy/git/sdxl_consistency/train.py", line 204, in <module>
+    train()
+  File "/Users/nicholasbardy/git/sdxl_consistency/train.py", line 135, in train
+    train_dataloader = get_train_dataloader()
+TypeError: get_train_dataloader() missing 1 required positional argument: 'args'

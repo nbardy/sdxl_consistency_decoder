@@ -212,7 +212,7 @@ def train():
         train_loss = 0.0
         for step, batch in enumerate(train_dataloader):
             # with accelerator.accumulate(latent_projetor):
-            target = batch["pixel_values"].to(device, dtype=dtype)
+            target = batch["pixel_values"].to(weight_dtype)
 
             # https://github.com/huggingface/diffusers/blob/main/src/diffusers/models/autoencoder_kl.py
             posterior = sdxl_vae.encode(target).latent_dist

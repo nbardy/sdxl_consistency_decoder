@@ -1,0 +1,3 @@
+git+https://github.com/nbardy/consistencydecoder.git
+diffusers
+accelerate

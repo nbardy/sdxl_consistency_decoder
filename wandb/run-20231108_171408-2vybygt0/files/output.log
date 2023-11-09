@@ -1,0 +1,7 @@
+
+Mapping
+
+Map:  99%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████▉ | 99/100 [00:20<00:00, 99.33 examples/s]Exception ignored in: <function _xla_gc_callback at 0x1548a2b80>
+Traceback (most recent call last):
+  File "/Users/nicholasbardy/.pyenv/versions/3.9.9/lib/python3.9/site-packages/jax/_src/lib/__init__.py", line 103, in _xla_gc_callback
+    def _xla_gc_callback(*args):
